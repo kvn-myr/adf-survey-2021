@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE surveyProject SYSTEM "doctype.survey.dtd">
+<surveyProject version="2.4" timestamp="2021-05-11 13:59:24" program="oFb" progversion="3.2.27 1302">
+<title>Automotive Data Formats</title>
+<description />
+<attributes.specific program="ofb">
+<attr id="language">eng</attr>
+<attr id="projectBackground">tutorial</attr>
+</attributes.specific>
+<section>
+<title>Introduction</title>
+<attributes.specific program="ofb">
+<attr id="id">IT</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+<question>
+<description>Introduction text</description>
+<class>TextContent</class>
+<title />
+<explanation />
+<inputPosition>right</inputPosition>
+<lead>
+<![CDATA[<p><font size="5"><b>Welcome to this survey!</b></font><br /></p>
+
+<p>This survey is part of my (Kevin Gomez Buquerin) PhD research. It covers the subject area of automotive digital forensics. The contracting authority is myself. The <i>Technical University Ingolstadt</i> (<a href="https://www.thi.de">https://www.thi.de</a>) is the supporting research institution.</p>
+
+<p>Requirements stated by the <i>European General Data Protection Regulation</i> (GDPR) are fulfilled. No personal data is collected. <i>SoSci Survey</i> provides further information under the following URL: <a href="https://www.soscisurvey.de/en/privacy">https://www.soscisurvey.de/en/privacy</a></p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<p><font size="3"><b>What can I expect here?</b></font></p>
+
+<p>The following survey consists of three sections. Each section contains different questions related to digital forensics and automotive systems. Automotive systems include in-vehicle components (e.g. ECUs) and components directly connected to vehicles (e.g. OEM backends, smartphones, OBD dongles)<br /></p>
+
+<p>First, questions about general experience and known data formats in digital forensics are in scope. Next, questions regarding digital forensic tools in the area of in-vehicle as well as automotive related systems are of interest. The last section contains questions about 11 automotive components and related data formats.</p>
+
+<p><br /></p>
+
+<p><font size="3"><b>What is the benefit of this survey?</b></font><br /></p>
+
+<p>My goal is to evaluate coverage, experience, and knowledge of tools and data formats used in automotive digital forensics. Further, this survey aims to identify additional tools and data formats known by experts.<br /></p>
+
+<p>
+<!--StartFragment-->Based on the results of this survey, we identify relevant data formats. 
+This helps researchers to create extraction and analysis methods for 
+automotive digital forensic investigations.<!--EndFragment--></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<p><font size="3"><b>Do I have to answer everything?</b></font><br /></p>
+
+<p>No, you don't! I want to state that the <b>participation is voluntary </b>and not mandatory. Feel free to skip questions.<br /></p>]]>
+</lead>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+<attr id="number">no</attr>
+<attr id="alignment">default</attr>
+</attributes.specific>
+</question>
+</section>
+<section>
+<title>Experience and Data Formats</title>
+<attributes.specific program="ofb">
+<attr id="id">ED</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+<question>
+<description>Experience</description>
+<class>scale</class>
+<title>Experience</title>
+<explanation>How would you describe your experience in the following areas?</explanation>
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">Low or no experience</li>
+<li i="3">Medium or average experience</li>
+<li i="5">High or advanced experience</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+<attr id="scale.display">complete</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text>Automotive security</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Vehicle component development</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Digital forensics</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Known Data Formats</description>
+<class>scale</class>
+<title>Data formats</title>
+<explanation>There are different known data formats in digital forensics and automotive. Which of the following data formats do you know?</explanation>
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">Never heard of it</li>
+<li i="2">Heard of it</li>
+<li i="3">Used it</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+<attr id="scale.display">complete</attr>
+<attr id="scale.niveau">3</attr>
+<attr id="alignment">center</attr>
+</attributes.specific>
+<item>
+<text>Memory dumps created by using debugging interfaces, such as JTAG, on the hardware component </text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>eMMC memory dumps</text>
+<attributes.specific program="ofb">
+<attr id="id">10</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>JSON files</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>USB image</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+<item>
+<text>SD-card image</text>
+<attributes.specific program="ofb">
+<attr id="id">5</attr>
+<attr id="pos">5</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Hardware Security Module (HSM) data</text>
+<attributes.specific program="ofb">
+<attr id="id">6</attr>
+<attr id="pos">6</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Trusted Platform Module (TPM) data</text>
+<attributes.specific program="ofb">
+<attr id="id">7</attr>
+<attr id="pos">7</attr>
+</attributes.specific>
+</item>
+<item>
+<text>PDF files from Event Data Recorder products</text>
+<attributes.specific program="ofb">
+<attr id="id">21</attr>
+<attr id="pos">8</attr>
+</attributes.specific>
+</item>
+<item>
+<text>CDR files from Bosch Crash Data Retrieval products</text>
+<attributes.specific program="ofb">
+<attr id="id">8</attr>
+<attr id="pos">9</attr>
+</attributes.specific>
+</item>
+<item>
+<text>JSON files from Tesla Event Data Retrieval products</text>
+<attributes.specific program="ofb">
+<attr id="id">9</attr>
+<attr id="pos">10</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Berla iVe exports</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">11</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Cellebrite exports</text>
+<attributes.specific program="ofb">
+<attr id="id">11</attr>
+<attr id="pos">12</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Oxygen Forensics exports</text>
+<attributes.specific program="ofb">
+<attr id="id">12</attr>
+<attr id="pos">13</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Magnet Axiom exports</text>
+<attributes.specific program="ofb">
+<attr id="id">13</attr>
+<attr id="pos">14</attr>
+</attributes.specific>
+</item>
+<item>
+<text>E01 files</text>
+<attributes.specific program="ofb">
+<attr id="id">22</attr>
+<attr id="pos">15</attr>
+</attributes.specific>
+</item>
+<item>
+<text>CSV files</text>
+<attributes.specific program="ofb">
+<attr id="id">14</attr>
+<attr id="pos">16</attr>
+</attributes.specific>
+</item>
+<item>
+<text>XLS files</text>
+<attributes.specific program="ofb">
+<attr id="id">15</attr>
+<attr id="pos">17</attr>
+</attributes.specific>
+</item>
+<item>
+<text>XRY from MSAB</text>
+<attributes.specific program="ofb">
+<attr id="id">16</attr>
+<attr id="pos">18</attr>
+</attributes.specific>
+</item>
+<item>
+<text>GPX files</text>
+<attributes.specific program="ofb">
+<attr id="id">17</attr>
+<attr id="pos">19</attr>
+</attributes.specific>
+</item>
+<item>
+<text>KML files</text>
+<attributes.specific program="ofb">
+<attr id="id">18</attr>
+<attr id="pos">20</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Software Defined Radio (SDR) captures</text>
+<attributes.specific program="ofb">
+<attr id="id">19</attr>
+<attr id="pos">21</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Packet Captures (PCAP)</text>
+<attributes.specific program="ofb">
+<attr id="id">20</attr>
+<attr id="pos">22</attr>
+</attributes.specific>
+</item>
+<item>
+<text>UDX files</text>
+<attributes.specific program="ofb">
+<attr id="id">23</attr>
+<attr id="pos">23</attr>
+</attributes.specific>
+</item>
+<item>
+<text>DBC files</text>
+<attributes.specific program="ofb">
+<attr id="id">24</attr>
+<attr id="pos">24</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Other Data Formats</description>
+<class>mentions</class>
+<title>Do you know additional data formats related to digital forensics or automotive?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+<attr id="texts">
+<li i="0">%n%</li>
+</attr>
+</attributes.specific>
+</question>
+<question>
+<description>Experience and Data Formats</description>
+<class>TextContent</class>
+<title />
+<explanation />
+<inputPosition>right</inputPosition>
+<lead>
+<![CDATA[<p><font size="5"><b>Experience and Data Formats</b></font></p>]]>
+</lead>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+<attr id="number">no</attr>
+<attr id="alignment">default</attr>
+</attributes.specific>
+</question>
+</section>
+<section>
+<title>Tools</title>
+<attributes.specific program="ofb">
+<attr id="id">TO</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+<question>
+<description>Tools Text</description>
+<class>TextContent</class>
+<title />
+<explanation />
+<inputPosition>right</inputPosition>
+<lead>
+<![CDATA[<p><b><font size="5">Tools</font></b></p>
+
+<p>The following questions relate to digital forensic for automotive systems only.<br /></p>]]>
+</lead>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+<attr id="alignment">default</attr>
+</attributes.specific>
+</question>
+<question>
+<description>Known Tools</description>
+<class>scale</class>
+<title>Tools for automotive digital forensics</title>
+<explanation>There are different known tools for digital forensics for automotive and related systems (such as smartphones or Car-to-X). Which of the following tools do you know?</explanation>
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">Never heard of it</li>
+<li i="2">Heard of it</li>
+<li i="3">Used it</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+<attr id="scale.display">complete</attr>
+<attr id="scale.niveau">3</attr>
+<attr id="alignment">center</attr>
+</attributes.specific>
+<item>
+<text>Berla iVe</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Bosch Crash Data Retrieval (CDR) products</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Telsa Event Data Retrieval tool</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Cellebrite smartphone forensic products</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Oxygen smartphone forensic products</text>
+<attributes.specific program="ofb">
+<attr id="id">5</attr>
+<attr id="pos">5</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Magnet smartphone forensic products</text>
+<attributes.specific program="ofb">
+<attr id="id">6</attr>
+<attr id="pos">6</attr>
+</attributes.specific>
+</item>
+<item>
+<text>FTK Imager</text>
+<attributes.specific program="ofb">
+<attr id="id">7</attr>
+<attr id="pos">7</attr>
+</attributes.specific>
+</item>
+<item>
+<text>F-Response forensic products</text>
+<attributes.specific program="ofb">
+<attr id="id">8</attr>
+<attr id="pos">8</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Saleae Logic Analyzer</text>
+<attributes.specific program="ofb">
+<attr id="id">9</attr>
+<attr id="pos">9</attr>
+</attributes.specific>
+</item>
+<item>
+<text>The Shikra</text>
+<attributes.specific program="ofb">
+<attr id="id">10</attr>
+<attr id="pos">10</attr>
+</attributes.specific>
+</item>
+<item>
+<text>BusPirate</text>
+<attributes.specific program="ofb">
+<attr id="id">11</attr>
+<attr id="pos">11</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Freescale MFGTool</text>
+<attributes.specific program="ofb">
+<attr id="id">12</attr>
+<attr id="pos">12</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Unix 'dd' utility</text>
+<attributes.specific program="ofb">
+<attr id="id">13</attr>
+<attr id="pos">13</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Other Tools</description>
+<class>mentions</class>
+<title>Do you know additional tools related to automotive digital forensics?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+<attr id="texts">
+<li i="0">%n%</li>
+</attr>
+</attributes.specific>
+</question>
+</section>
+<section>
+<title>Components</title>
+<attributes.specific program="ofb">
+<attr id="id">CP</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+<question>
+<description>Data Formats Text</description>
+<class>TextContent</class>
+<title />
+<explanation />
+<inputPosition>right</inputPosition>
+<lead>
+<![CDATA[<p><b><font size="5">Data Formats for Automotive Components</font></b></p>
+
+<p>Data formats vary between components. Further, extracted data formats depend on the used tool. Those tools distinguish between automotive components.</p>
+
+<p>The following questions are specific for 11 different automotive components. Each question aims to identify additional known data formats for the specific component.
+<!--StartFragment--></p>
+
+<div class="explanation">
+<p>Known data formats (prior section) are:</p><ul><li>Memory dumps created by using debugging interfaces, such as JTAG, on the hardware component</li><li>eMMC memory dumps</li><li>JSON files</li><li>USB image</li><li>SD-card image</li><li>Hardware Security Module (HSM) data</li><li>Trusted Platform Module (TPM) data</li><li>PDF files from Event Data Recorder products</li><li>CDR files from Bosch Crash Data Retrieval products</li><li>JSON files from Tesla Event Data Retrieval products</li><li>Berla iVe exports</li><li>Cellebrite exports</li><li>Oxygen Forensics exports</li><li>Magnet Axiom exports</li><li>E01 files</li><li>CSV files</li><li>XLS files</li><li>XRY from MSAB</li><li>GPX files</li><li>KML files</li><li>Software Defined Radio (SDR) captures</li><li>Packet Captures (PCAP)</li><li>UDX files</li><li>DBC files</li></ul>
+</div>
+<div class="titleSpacing"></div>
+<!--EndFragment-->
+
+
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<p><font size="3"><b>Which other data formats do you know or could you imagine for the following automotive components?</b></font></p>]]>
+</lead>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+<attr id="alignment">default</attr>
+</attributes.specific>
+</question>
+<question>
+<description>Battery Related Systems</description>
+<class>mentions</class>
+<title>Battery related systems</title>
+<explanation>Battery related systems include in-vehicle battery management systems and external charging stations.</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+<attr id="texts">
+<li i="0">%n%</li>
+</attr>
+</attributes.specific>
+</question>
+<question>
+<description>End-point devices</description>
+<class>mentions</class>
+<title>End-point devices</title>
+<explanation>End-point devices include mobile devices, backend systems, and OBD dongles. Such devices can be connected to the vehicle in several ways (e.g. via Internet connection, direct connection, etc.).</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+<attr id="texts">
+<li i="0">%n%</li>
+</attr>
+</attributes.specific>
+</question>
+<question>
+<description>Telematics control units</description>
+<class>mentions</class>
+<title>Telematics control units</title>
+<explanation>Telematic control units include Car2X components and other communication related components (e.g. to manufacturer backend).</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+<attr id="texts">
+<li i="0">%n%</li>
+</attr>
+</attributes.specific>
+</question>
+<question>
+<description>Infotainment</description>
+<class>mentions</class>
+<title>Infotainment systems</title>
+<explanation>Infotainment systems include Audi MMI, BMW iDrive, or Mercedes-Benz MBUX. These systems are not classified as end-point devices. However, infotainment systems allow connections and communication with end-point devices.</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">5</attr>
+<attr id="pos">5</attr>
+<attr id="texts">
+<li i="0">%n%</li>
+</attr>
+</attributes.specific>
+</question>
+<question>
+<description>External navigation systems</description>
+<class>mentions</class>
+<title>External navigation systems</title>
+<explanation>External Navigation Systems include mobile GPS systems from Garmin or TomTom.</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">6</attr>
+<attr id="pos">6</attr>
+<attr id="texts">
+<li i="0">%n%</li>
+</attr>
+</attributes.specific>
+</question>
+<question>
+<description>Comfort systems</description>
+<class>mentions</class>
+<title>Comfort systems</title>
+<explanation>Comfort systems control stored seat positions, air conditioning preferences, and in-vehicle temperature settings.</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">7</attr>
+<attr id="pos">7</attr>
+<attr id="texts">
+<li i="0">%n%</li>
+</attr>
+</attributes.specific>
+</question>
+<question>
+<description>Immobilizer systems</description>
+<class>mentions</class>
+<title>Immobilizer systems</title>
+<explanation>Immobilizer systems includes key fobs and in-vehicle receivers and cryptographic components.</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">8</attr>
+<attr id="pos">8</attr>
+<attr id="texts">
+<li i="0">%n%</li>
+</attr>
+</attributes.specific>
+</question>
+<question>
+<description>Gateways</description>
+<class>mentions</class>
+<title>Gateways</title>
+<explanation>Gateways translate information between different bus protocols and filter information.</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">9</attr>
+<attr id="pos">9</attr>
+<attr id="texts">
+<li i="0">%n%</li>
+</attr>
+</attributes.specific>
+</question>
+<question>
+<description>Safety monitoring systems</description>
+<class>mentions</class>
+<title>Safety monitoring systems</title>
+<explanation>Safety monitoring systems monitor vehicle  surroundings and passengers. Examples are NXPs Driver/Occupant Monitoring systems.</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">10</attr>
+<attr id="pos">10</attr>
+<attr id="texts">
+<li i="0">%n%</li>
+</attr>
+</attributes.specific>
+</question>
+<question>
+<description>eCall</description>
+<class>mentions</class>
+<title>eCall components</title>
+<explanation>This includes embedded components (mandatory since April 2018) and external devices such as Bosch “Unfallstecker”. These devices automatically make a emergency call. eCall systems are not the same as Airbag components.</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">11</attr>
+<attr id="pos">11</attr>
+<attr id="texts">
+<li i="0">%n%</li>
+</attr>
+</attributes.specific>
+</question>
+<question>
+<description>Airbag</description>
+<class>mentions</class>
+<title>Airbag systems</title>
+<explanation>Airbag systems are installed within the vehicle and collect different predefined information such as vehicle speed, accelerator of the pedal, service brake activation, and more.</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">12</attr>
+<attr id="pos">12</attr>
+<attr id="texts">
+<li i="0">%n%</li>
+</attr>
+</attributes.specific>
+</question>
+<question>
+<description>Other Components</description>
+<class>mentions</class>
+<title />
+<explanation>Do you know additional in-vehicle or vehicle-connected components?</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">13</attr>
+<attr id="pos">13</attr>
+<attr id="texts">
+<li i="0">%n%</li>
+</attr>
+</attributes.specific>
+</question>
+<question>
+<description>Other Components</description>
+<class>TextContent</class>
+<title />
+<explanation />
+<inputPosition>right</inputPosition>
+<lead>
+<![CDATA[<p><b><font size="3">Other components not mentioned in the prior questions</font></b><br /></p>]]>
+</lead>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">14</attr>
+<attr id="pos">14</attr>
+<attr id="alignment">default</attr>
+</attributes.specific>
+</question>
+</section>
+<section>
+<title>Closing</title>
+<attributes.specific program="ofb">
+<attr id="id">CL</attr>
+<attr id="pos">5</attr>
+</attributes.specific>
+<question>
+<description>Closing Text</description>
+<class>TextContent</class>
+<title />
+<explanation />
+<inputPosition>right</inputPosition>
+<lead>
+<![CDATA[<h1>Thank you for completing this questionnaire and participating at this research!</h1>
+
+<p>I would like to thank you very much for helping.</p>
+
+<p> Feel free to contact me, if you have further questions or subjects you want to discuss. You are able to contact me under the following e-mail address: <a href="mailto:extern.KevinKlaus.GomezBuquerin@thi.de">extern.KevinKlaus.GomezBuquerin@thi.de</a> </p>]]>
+</lead>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+<attr id="alignment">default</attr>
+<attr id="character">html</attr>
+</attributes.specific>
+</question>
+</section>
+<layoutTexts>
+<layoutText id="default.imprint"><txt lng="eng"><![CDATA[<a href="mailto:extern.kevinklaus.gomezbuquerin@thi.de">M.Sc. Kevin Klaus Gomez Buquerin</a>, 
+<a href="https://www.thi.de/en/research/carissma-1" target="_blank">CARISSMA Institute of Electric, Connected, and Secure Mobility</a>, 
+<a href="https://www.thi.de/en/" target="_blank">Technical University Ingolstadt</a> – 2021]]></txt></layoutText>
+</layoutTexts>
+<questionnaire>
+<title>Questionnaire about Automotive Digital Forensic Tools and Data Formats</title>
+<attributes.specific program="ofb">
+<attr id="id">automotive-digital-forensics</attr>
+<attr id="content">
+<![CDATA[<?xml version="1.0"?>
+<questionnaire>
+
+<!-- Page 1 -->
+<page ident="IT" intID="1">
+<info>Introduction</info>
+<question id="IT01" intID="2" />
+</page>
+
+
+<!-- Page 2 -->
+<page ident="ED" intID="3">
+<info>Experience and Data Formats</info>
+<question id="ED04" intID="7" />
+<question id="ED01" intID="4" />
+<question id="ED02" intID="5" />
+<question id="ED03" intID="6" />
+</page>
+
+
+<!-- Page 3 -->
+<page ident="TO" intID="8">
+<info>Tools</info>
+<question id="TO01" intID="9" />
+<question id="TO02" intID="10" />
+<question id="TO03" intID="11" />
+</page>
+
+
+<!-- Page 4 -->
+<page ident="CP" intID="12">
+<info>Components</info>
+<question id="CP01" intID="13" />
+<question id="CP02" intID="14" />
+<question id="CP03" intID="15" />
+<question id="CP04" intID="16" />
+<question id="CP05" intID="17" />
+<question id="CP06" intID="18" />
+<question id="CP07" intID="19" />
+<question id="CP08" intID="20" />
+<question id="CP09" intID="21" />
+<question id="CP10" intID="22" />
+<question id="CP11" intID="23" />
+<question id="CP12" intID="24" />
+<question id="CP14" intID="28" />
+<question id="CP13" intID="25" />
+</page>
+
+
+<!-- Page 5 -->
+<page ident="CL" intID="26">
+<info>Closing</info>
+<question id="CL01" intID="27" />
+</page>
+
+
+</questionnaire>]]>
+</attr>
+<attr id="goodbye">
+<![CDATA[<p>Your answers were transmitted, you may close the browser window or tab now.</p>
+
+<!-- Additional spacing (remove or adjust as required)  -->
+<div style="padding-bottom: 120px"></div>]]>
+</attr>
+<attr id="selection">1</attr>
+<attr id="backbutton">yes</attr>
+<attr id="probePreset">no</attr>
+</attributes.specific>
+</questionnaire>
+</surveyProject>
